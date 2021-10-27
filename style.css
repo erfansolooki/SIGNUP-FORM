@@ -1,0 +1,184 @@
+@charset "UTF-8";
+#main {
+  background-image: url(./pictures/pexels-cátia-matos-1072179.jpg);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40rem;
+  width: 83rem;
+}
+
+#main #section #left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(5, 4, 7, 0.3);
+  position: relative;
+}
+
+#main #section #left-content h1 {
+  color: #EDEDE9;
+  font-size: 4rem;
+  font-weight: 600;
+  word-spacing: .5rem;
+}
+
+#main #section #left-content p {
+  color: #EDEDE9;
+  padding-top: 3rem;
+  width: 30rem;
+  line-height: 1.2rem;
+}
+
+#main #section #right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(5, 4, 7, 0.7);
+}
+
+#main #section #right-content #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 25rem;
+  width: 25rem;
+}
+
+#main #section #right-content #form h1 {
+  color: #EDEDE9;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form {
+  position: relative;
+}
+
+#main #section #right-content #form .control-form input {
+  height: 2rem;
+  width: 20rem;
+  border: none;
+  border-bottom: solid 2px #BFC3BC;
+  background-color: rgba(5, 4, 7, 0.1);
+  color: #BFC3BC;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form small {
+  position: absolute;
+  color: #e01927;
+  top: 2.8rem;
+  left: 1rem;
+  visibility: hidden;
+}
+
+#main #section #right-content #form .control-form input::-webkit-input-placeholder {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form input:-ms-input-placeholder {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form input::-ms-input-placeholder {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form input::placeholder {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#main #section #right-content #form .control-form i {
+  position: absolute;
+  color: #e01927;
+  left: 19rem;
+  top: 0.5rem;
+  visibility: hidden;
+}
+
+#main #section #right-content #form button {
+  height: 2.2rem;
+  width: 20rem;
+  border: none;
+  background-color: #0B431A;
+  font-weight: 600;
+  color: #EDEDE9;
+  border-radius: 0.2rem;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#main #section #right-content .control-form.error input {
+  border-bottom: solid 2px #e01927 !important;
+}
+
+#main #section #right-content .control-form.error i.fa-exclamation-circle {
+  visibility: visible !important;
+}
+
+#main #section #right-content .control-form.error small {
+  visibility: visible !important;
+}
+
+#main #section #right-content .control-form.success input {
+  border-bottom: solid 2px #0B431A !important;
+}
+
+#main #section #right-content .control-form.success i.fa-check-circle {
+  visibility: visible !important;
+  color: #0B431A !important;
+}
+/*# sourceMappingURL=style.css.map */
