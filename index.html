@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.rtl.min.css">
 </head>
-<body>
+<body style="height: 100vh;" class="d-flex align-items-center">
 
-    <main id="main">
+    <main id="main" class="container">
 
-        <section id="section">
+           <div class="row">
 
-            <div id="left-content">
-                <h1>Let's Get Started</h1>
+            <div id="left-content" class="col-md-6 justify-content-center align-items-center flex-column d-none d-md-flex">
+                <h1 class="w-100">Let's Get Started</h1>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quas dolores, totam aspernatur error velit, ea assumenda quae est, amet nostrum id minus expedita incidunt esse odit sunt provident eius?</p>
+                <p class="pt-5 px-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quas dolores, totam aspernatur error velit, ea assumenda quae est, amet nostrum id minus expedita incidunt esse odit sunt provident eius?</p>
             </div>
 
-            <div id="right-content">
+            <div id="right-content" class="col-md-6 d-flex justify-content-center align-items-center">
 
-                <form id="form" action="./." method="get">
+                <form id="form" action="./." method="get" class="d-flex justify-content-between flex-column">
 
                     <h1>Sign Up</h1>
 
@@ -65,11 +66,11 @@
 
             </div>
 
-        </section>
+           </div>
        
-
     </main>
 
     <script src="./script.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
 </body>
 </html>

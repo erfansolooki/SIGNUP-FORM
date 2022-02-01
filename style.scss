@@ -1,56 +1,33 @@
-#main {
+body {
     background-image: url(./pictures/pexels-cátia-matos-1072179.jpg);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40rem;
-        width: 83rem;
+    // height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .row {
+        // padding: 5rem 0;
         #left-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
-            height: 100%;
-            width: 50%;
             background-color: rgba(5, 4, 7, .3);
-            position: relative;
             h1 {
                 color: #EDEDE9;
                 font-size: 4rem;
                 font-weight: 600;
-                word-spacing: .5rem;
             }
             p {
                 color: #EDEDE9;
-                padding-top: 3rem;
-                width: 30rem;
-                line-height: 1.2rem;
+                max-width: 50rem;
             }
         }
         #right-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 50%;
+            padding: 5rem 0;
             background-color: rgba(5, 4, 7, .7);
             #form {
-                display: flex;
-                justify-content: space-between;
-                flex-flow: column;
                 height: 25rem;
-                width: 25rem;
                 h1 {
                     color: #EDEDE9;
                     font-size: 2rem;
                     font-weight: 600;
                 }
-                
                 .control-form {
                     position: relative;
                     input {
