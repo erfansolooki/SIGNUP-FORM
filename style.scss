@@ -1,11 +1,6 @@
 body {
     background-image: url(./pictures/pexels-cátia-matos-1072179.jpg);
-    // height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     .row {
-        // padding: 5rem 0;
         #left-content {
             background-color: rgba(5, 4, 7, .3);
             h1 {
@@ -51,10 +46,10 @@ body {
                         font-weight: 600;
                     }
                     i {
-                        position: absolute;
+                        position: relative;
                         color: #e01927;
-                        left: 19rem;
-                        top: 0.5rem;
+                        left: 17rem;
+                        bottom: 2rem;
                         visibility: hidden;
                     }
                 }
@@ -92,5 +87,15 @@ body {
                 }
             }
         }
+    }
+}
+
+@media( max-width : 375px) {
+    input,
+    button {
+         width: 16rem !important;
+    }
+    i {
+        left: 14rem !important;
     }
 }

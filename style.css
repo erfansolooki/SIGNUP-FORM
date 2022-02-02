@@ -76,10 +76,10 @@ body .row #right-content #form .control-form input::placeholder {
 }
 
 body .row #right-content #form .control-form i {
-  position: absolute;
+  position: relative;
   color: #e01927;
-  left: 19rem;
-  top: 0.5rem;
+  left: 17rem;
+  bottom: 2rem;
   visibility: hidden;
 }
 
@@ -116,5 +116,15 @@ body .row #right-content .control-form.success input {
 body .row #right-content .control-form.success i.fa-check-circle {
   visibility: visible !important;
   color: #0B431A !important;
+}
+
+@media (max-width: 375px) {
+  input,
+  button {
+    width: 16rem !important;
+  }
+  i {
+    left: 14rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
