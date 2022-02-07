@@ -1,99 +1,103 @@
+// VARAIBLES
+@import "variables";
+
 body {
     background-image: url(./pictures/pexels-cátia-matos-1072179.jpg);
     .row {
         #left-content {
             background-color: rgba(5, 4, 7, .3);
             h1 {
-                color: #EDEDE9;
-                font-size: 4rem;
-                font-weight: 600;
+                color: $white-color;
+                font-size: $second-size * 2;
+                font-weight: $font-weight;
             }
             p {
-                color: #EDEDE9;
-                max-width: 50rem;
+                color: $white-color;
+                max-width: $width-size * 2.5;
             }
         }
         #right-content {
-            padding: 5rem 0;
+            padding: $second-size * 2.5 0;
             background-color: rgba(5, 4, 7, .7);
             #form {
-                height: 25rem;
+                height: $width-size + 5;
                 h1 {
-                    color: #EDEDE9;
-                    font-size: 2rem;
-                    font-weight: 600;
+                    color: $white-color;
+                    font-size: $second-size;
+                    font-weight: $font-weight;
                 }
                 .control-form {
                     position: relative;
                     input {
-                        height: 2rem;
-                        width: 20rem;
+                        height: $second-size;
+                        width: $width-size;
                         border: none;
-                        border-bottom: solid 2px #BFC3BC;
+                        border-bottom: solid $third-size $grey-color;
                         background-color: rgba(5, 4, 7, .1);
-                        color: #BFC3BC;
-                        font-weight: 600;
+                        color: $grey-color;
+                        font-weight: $font-weight;
                     }
                     small {
                         position: absolute;
-                        color: #e01927;
-                        top: 2.8rem;
-                        left: 1rem;
-                        visibility: hidden;
+                        color: $error-color;
+                        top: $second-size + .8;
+                        left: $first-size;
+                        visibility: $hidden;
                     }
                     input::placeholder {
-                        padding-left: 1rem;
-                        font-weight: 600;
+                        padding-left: $first-size;
+                        font-weight: $font-weight;
                     }
                     i {
                         position: relative;
-                        color: #e01927;
+                        color: $error-color;
                         left: 17rem;
-                        bottom: 2rem;
-                        visibility: hidden;
+                        bottom: $second-size;
+                        visibility: $hidden;
                     }
                 }
                 button {
-                    height: 2.2rem;
-                    width: 20rem;
+                    height: $second-size + .2;
+                    width: $width-size;
                     border: none;
-                    background-color: #0B431A;
-                    font-weight: 600;
-                    color: #EDEDE9;
-                    border-radius: 0.2rem;
-                    filter: drop-shadow(2px 4px 6px black);
+                    background-color: $success-color;
+                    font-weight: $font-weight;
+                    color: $white-color;
+                    border-radius: $third-size + 1;
+                    filter: drop-shadow($third-size 4px 6px $black-color);
                     cursor: pointer;
-                    font-size: 1rem;
+                    font-size: $first-size;
                 }
             }
             .control-form.error {
                 input {
-                    border-bottom: solid 2px #e01927 !important;
+                    border-bottom: solid $third-size $error-color !important;
                 }
                 i.fa-exclamation-circle {
-                    visibility: visible !important;
+                    visibility: $visible !important;
                 }
                 small {
-                    visibility: visible !important;
+                    visibility: $visible !important;
                 }
             }
             .control-form.success {
                 input {
-                    border-bottom: solid 2px #0B431A !important;
+                    border-bottom: solid $third-size $success-color !important;
                 }
                 i.fa-check-circle {
-                    visibility: visible !important;
-                    color: #0B431A !important;
+                    visibility: $visible !important;
+                    color: $success-color !important;
                 }
             }
         }
     }
 }
 
+// MEDIAQUERY FOR XSMALL SCREEN
 @media( max-width : 375px) {
     input,
     button {
-         width: 16rem !important;
+         width: $width-size - 4 !important;
     }
     i {
         left: 14rem !important;

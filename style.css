@@ -90,9 +90,9 @@ body .row #right-content #form button {
   background-color: #0B431A;
   font-weight: 600;
   color: #EDEDE9;
-  border-radius: 0.2rem;
-  -webkit-filter: drop-shadow(2px 4px 6px black);
-          filter: drop-shadow(2px 4px 6px black);
+  border-radius: 3px;
+  -webkit-filter: drop-shadow(2px 4px 6px #000);
+          filter: drop-shadow(2px 4px 6px #000);
   cursor: pointer;
   font-size: 1rem;
 }
