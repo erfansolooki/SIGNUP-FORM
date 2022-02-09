@@ -13,7 +13,7 @@ body {
             }
             p {
                 color: $white-color;
-                max-width: $width-size * 2.5;
+                // max-width: $width-size * 2.5;
             }
         }
         #right-content {
@@ -102,4 +102,10 @@ body {
     i {
         left: 14rem !important;
     }
+}
+
+.hidden {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: .5s linear;
 }

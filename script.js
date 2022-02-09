@@ -64,3 +64,15 @@ function setSuccessFor(input) {
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+
+// SIGN IN
+const signIn = document.querySelector('.sign-in')
+const btn = document.querySelector('.btn-outline-success');
+const wellcome = document.querySelector('.wellcome')
+
+btn.addEventListener( "click" , function() {
+    form.classList.add('hidden');
+    wellcome.classList.add('hidden');
+    signIn.classList.add('hidden')
+})

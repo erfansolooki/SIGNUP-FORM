@@ -15,7 +15,6 @@ body .row #left-content h1 {
 
 body .row #left-content p {
   color: #EDEDE9;
-  max-width: 50rem;
 }
 
 body .row #right-content {
@@ -126,5 +125,12 @@ body .row #right-content .control-form.success i.fa-check-circle {
   i {
     left: 14rem !important;
   }
+}
+
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
 }
 /*# sourceMappingURL=style.css.map */
