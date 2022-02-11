@@ -4,8 +4,10 @@
 body {
     background-image: url(./pictures/pexels-cátia-matos-1072179.jpg);
     .row {
+        animation: fade_in_show 2s;
         #left-content {
-            background-color: rgba(5, 4, 7, .3);
+            background-color: #0504074d;
+            transition: all .5s ease-in-out;
             h1 {
                 color: $white-color;
                 font-size: $second-size * 2;
@@ -13,14 +15,14 @@ body {
             }
             p {
                 color: $white-color;
-                // max-width: $width-size * 2.5;
             }
         }
         #right-content {
             padding: $second-size * 2.5 0;
             background-color: rgba(5, 4, 7, .7);
-            #form {
+            #form1 {
                 height: $width-size + 5;
+               
                 h1 {
                     color: $white-color;
                     font-size: $second-size;
@@ -89,6 +91,9 @@ body {
                     color: $success-color !important;
                 }
             }
+            .btn-outline-success {
+                padding: .1rem 1.3rem;
+            }
         }
     }
 }
@@ -104,8 +109,22 @@ body {
     }
 }
 
+@keyframes fade_in_show {
+     0% {
+          opacity: 0;
+          transform: scale(0)
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1)
+     }
+}
+
 .hidden {
-    visibility: hidden !important;
-    opacity: 0 !important;
-    transition: .5s linear;
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
 }

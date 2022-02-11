@@ -1,10 +1,10 @@
-const form = document.querySelector('#form')
+const form1 = document.querySelector('#form1')
 const username = document.querySelector('#username')
 const email = document.querySelector('#email')
 const password = document.querySelector('#password')
 const password2 = document.querySelector('#confirm-password')
 
-form.addEventListener( 'submit' , (e) => {
+form1.addEventListener( 'submit' , (e) => {
     e.preventDefault()
 
     checkInputs();
@@ -67,12 +67,13 @@ function isEmail(email) {
 
 
 // SIGN IN
-const signIn = document.querySelector('.sign-in')
+const formSignUp = document.querySelector('#form-sign-up');
+const formSignIn = document.querySelector('#form-sign-in');
 const btn = document.querySelector('.btn-outline-success');
-const wellcome = document.querySelector('.wellcome')
 
 btn.addEventListener( "click" , function() {
-    form.classList.add('hidden');
-    wellcome.classList.add('hidden');
-    signIn.classList.add('hidden')
+    formSignUp.classList.toggle('hidden');
+    formSignUp.classList.toggle('show');
+    formSignIn.classList.toggle('show')
+    formSignIn.classList.toggle('hidden');
 })
