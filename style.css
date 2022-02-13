@@ -29,21 +29,21 @@ body .row #right-content {
   background-color: rgba(5, 4, 7, 0.7);
 }
 
-body .row #right-content #form1 {
+body .row #right-content form {
   height: 25rem;
 }
 
-body .row #right-content #form1 h1 {
+body .row #right-content form h1 {
   color: #EDEDE9;
   font-size: 2rem;
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form {
+body .row #right-content form .control-form {
   position: relative;
 }
 
-body .row #right-content #form1 .control-form input {
+body .row #right-content form .control-form input {
   height: 2rem;
   width: 20rem;
   border: none;
@@ -53,7 +53,7 @@ body .row #right-content #form1 .control-form input {
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form small {
+body .row #right-content form .control-form small {
   position: absolute;
   color: #e01927;
   top: 2.8rem;
@@ -61,27 +61,27 @@ body .row #right-content #form1 .control-form small {
   visibility: hidden;
 }
 
-body .row #right-content #form1 .control-form input::-webkit-input-placeholder {
+body .row #right-content form .control-form input::-webkit-input-placeholder {
   padding-left: 1rem;
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form input:-ms-input-placeholder {
+body .row #right-content form .control-form input:-ms-input-placeholder {
   padding-left: 1rem;
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form input::-ms-input-placeholder {
+body .row #right-content form .control-form input::-ms-input-placeholder {
   padding-left: 1rem;
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form input::placeholder {
+body .row #right-content form .control-form input::placeholder {
   padding-left: 1rem;
   font-weight: 600;
 }
 
-body .row #right-content #form1 .control-form i {
+body .row #right-content form .control-form i {
   position: relative;
   color: #e01927;
   left: 17rem;
@@ -89,7 +89,7 @@ body .row #right-content #form1 .control-form i {
   visibility: hidden;
 }
 
-body .row #right-content #form1 button {
+body .row #right-content form button {
   height: 2.2rem;
   width: 20rem;
   border: none;

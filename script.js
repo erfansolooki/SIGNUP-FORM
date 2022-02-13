@@ -66,14 +66,18 @@ function isEmail(email) {
 }
 
 
-// SIGN IN
+// CONVERT SIGN-IN INTO SIGNUP PAGE AND VISE VERSA
 const formSignUp = document.querySelector('#form-sign-up');
 const formSignIn = document.querySelector('#form-sign-in');
-const btn = document.querySelector('.btn-outline-success');
+const btn = document.querySelectorAll('.btn');
 
-btn.addEventListener( "click" , function() {
-    formSignUp.classList.toggle('hidden');
-    formSignUp.classList.toggle('show');
-    formSignIn.classList.toggle('show')
-    formSignIn.classList.toggle('hidden');
-})
+btn.forEach( (item) => {
+    item.addEventListener( "click" , () => {
+        formSignUp.classList.toggle('hidden');
+        formSignUp.classList.toggle('show');
+        formSignIn.classList.toggle('show')
+        formSignIn.classList.toggle('hidden');
+    })
+});
+
+// VALIDATION SIGN-FORM
