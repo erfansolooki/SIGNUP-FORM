@@ -21,7 +21,7 @@ body {
             padding: $second-size * 2.5 0;
             background-color: rgba(5, 4, 7, .7);
             form {
-                height: $width-size + 5;
+                height: $height-size + 5;
                 h1 {
                     color: $white-color;
                     font-size: $second-size;
@@ -126,4 +126,15 @@ body {
 
 .show {
     display: flex !important;
+}
+
+#form-sign-in {
+    #right-content {
+       form {
+        height: $height-size !important;
+       }
+    }
+    #right-content {
+        padding: $second-size + 5  0 !important;
+    }
 }

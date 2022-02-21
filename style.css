@@ -173,4 +173,12 @@ body .row #right-content .btn-outline-success {
   display: -ms-flexbox !important;
   display: flex !important;
 }
+
+#form-sign-in #right-content form {
+  height: 20rem !important;
+}
+
+#form-sign-in #right-content {
+  padding: 7rem 0 !important;
+}
 /*# sourceMappingURL=style.css.map */

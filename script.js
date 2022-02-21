@@ -81,3 +81,44 @@ btn.forEach( (item) => {
 });
 
 // VALIDATION SIGN-FORM
+const form2 = document.querySelector('#form2');
+const username2 = document.querySelector('#username2');
+const passwordSignIn = document.querySelector('#password2');
+
+form2.addEventListener( "submit" , (event) => {
+    event.preventDefault();
+
+    checkInputs2()
+})
+
+function checkInputs2() {
+    const user2Value = username2.value.trim();
+    const passwordSignInValue = passwordSignIn.value.trim();
+
+    if ( user2Value === '') {
+        setErrorFor2(username2 , 'Username Cannot Be Blank');
+    } else {
+        setSuccessFor2(username2);
+    }
+
+    if(passwordSignInValue === '') {
+		setErrorFor2(passwordSignIn, 'Password cannot be blank');
+	} else {
+		setSuccessFor2(passwordSignIn);
+	}
+}
+
+function setErrorFor2(input , messages) {
+    const controlForm = input.parentElement;
+    const small = controlForm.querySelector('small');
+
+    small.innerText = messages;
+
+    controlForm.className = 'control-form error'
+}
+
+function setSuccessFor2(input) {
+    const controlForm = input.parentElement;
+
+    controlForm.className = 'control-form success'
+}
